@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUCCESS"
+        android:text="@string/success"
         android:textColor="@android:color/holo_blue_light"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
