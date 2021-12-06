@@ -10,17 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicAnt">
         <activity
-            android:name=".mvvm.MvvmActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".success.SuccessActivity"
-            android:exported="true">
         </activity>
     </application>
 
