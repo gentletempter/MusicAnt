@@ -1,7 +1,7 @@
 package com.example.musicant.mvvm
 
 class MvvmAuthModel {
-    fun onSingUpClicked(
+    fun onSignUpClicked(
         name: String,
         email: String,
         password: String,

@@ -16,7 +16,9 @@ import com.google.android.material.textfield.TextInputLayout
 class AuthFragment : Fragment() {
 
     private lateinit var viewModel: MvvmViewModel
-
+    private lateinit var nameField: String
+    private lateinit var passwordField: String
+    
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -46,12 +48,17 @@ class AuthFragment : Fragment() {
         }
         subscribeOnLiveData()
     }
-
+//TODO:
+//    private fun restoreValues() {
+//        nameField.editText?.setText(viewModel.emailLiveData.value ?: "")
+//        passwordField.editText?.setText(viewModel.passwordLiveData.value ?: "")
+//    }
+    
     private fun subscribeOnLiveData() {
-        viewModel.isSingUpSuccessLiveData.observe(viewLifecycleOwner, {
+        viewModel.isSignUpSuccessLiveData.observe(viewLifecycleOwner, {
             (activity as MainActivity).openNextFragment(SuccessFragment())
         })
-        viewModel.isSingUpFailLiveData.observe(viewLifecycleOwner, {
+        viewModel.isSignUpFailLiveData.observe(viewLifecycleOwner, {
             Toast.makeText(context, "Something wrong. Please, retry!", Toast.LENGTH_LONG).show()
         })
     }
