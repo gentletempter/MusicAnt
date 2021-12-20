@@ -2,6 +2,7 @@ package com.example.musicant.mvvm
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.musicant.mvvm.model.MvvmAuthModel
 
 class MvvmViewModel : ViewModel() {
     val isSignUpSuccessLiveData = MutableLiveData<Unit>()

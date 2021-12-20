@@ -3,7 +3,7 @@ package com.example.musicant
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.musicant.mvvm.ui.AuthFragment
+import com.example.musicant.mvvm.ui.auth.AuthFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

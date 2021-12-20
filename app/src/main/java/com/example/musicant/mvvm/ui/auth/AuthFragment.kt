@@ -1,4 +1,4 @@
-package com.example.musicant.mvvm.ui
+package com.example.musicant.mvvm.ui.auth
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.musicant.MainActivity
 import com.example.musicant.R
 import com.example.musicant.mvvm.MvvmViewModel
+import com.example.musicant.mvvm.ui.music.AlbumsFragment
 import com.google.android.material.textfield.TextInputLayout
 
 class AuthFragment : Fragment() {
@@ -56,7 +57,7 @@ class AuthFragment : Fragment() {
     
     private fun subscribeOnLiveData() {
         viewModel.isSignUpSuccessLiveData.observe(viewLifecycleOwner, {
-            (activity as MainActivity).openNextFragment(SuccessFragment())
+            (activity as MainActivity).openNextFragment(AlbumsFragment())
         })
         viewModel.isSignUpFailLiveData.observe(viewLifecycleOwner, {
             Toast.makeText(context, "Something wrong. Please, retry!", Toast.LENGTH_LONG).show()

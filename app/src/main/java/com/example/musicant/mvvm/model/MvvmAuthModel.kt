@@ -1,4 +1,4 @@
-package com.example.musicant.mvvm
+package com.example.musicant.mvvm.model
 
 class MvvmAuthModel {
     fun onSignUpClicked(

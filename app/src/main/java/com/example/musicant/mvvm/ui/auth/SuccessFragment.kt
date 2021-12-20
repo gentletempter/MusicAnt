@@ -1,4 +1,4 @@
-package com.example.musicant.mvvm.ui
+package com.example.musicant.mvvm.ui.auth
 
 import android.os.Bundle
 import android.view.LayoutInflater
