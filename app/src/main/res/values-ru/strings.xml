@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">MusicAnt</string>
-<string name="name">Имя</string>
-<string name="email">Электронная почта</string>
-<string name="password">Пароль</string>
-<string name="confirm_password">Подтвердите пароль</string>
-<string name="sign_up">Зарегистрироваться</string>
-<string name="success">УСПЕХ</string>
+    <string name="app_name">MusicAnt</string>
+    <string name="name">Имя</string>
+    <string name="email">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="confirm_password">Подтвердите пароль</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="success">УСПЕХ</string>
+    <string name="auth_login">Логин</string>
+    <string name="auth_password">Пароль</string>
+    <string name="auth_save_credentials">Запомнить</string>
 </resources>

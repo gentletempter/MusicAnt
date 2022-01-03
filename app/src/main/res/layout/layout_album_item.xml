@@ -8,18 +8,20 @@
 
     <ImageView
         android:id="@+id/album_logo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
         tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/album_name"
-        android:layout_width="wrap_content"
+        android:layout_width="132dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:ellipsize="end"
         android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textStyle="bold" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

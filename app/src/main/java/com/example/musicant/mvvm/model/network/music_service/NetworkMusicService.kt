@@ -1,6 +1,6 @@
-package com.example.musicant.mvvm.model.network
+package com.example.musicant.mvvm.model.network.music_service
 
-import com.example.musicant.mvvm.model.entity.Album
+import com.example.musicant.mvvm.model.storage.room.entity.Album
 
 interface NetworkMusicService {
     fun getFavouriteMusic(): List<Any>
